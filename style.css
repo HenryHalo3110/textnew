@@ -187,15 +187,43 @@ footer h2 {
   background-color: #0f0b1a;
 }
 
+.navegacao-caixas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px 10px;
+  background-color: #0f0b1a;
+}
+
 .caixa-nav {
   background-color: #5a4b7e;
-  padding: 14px 24px;
-  border-radius: 8px;
-  font-size: 16px;
-  color: #fff;
+  padding: 16px 32px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  border: 2px solid transparent;
 }
+
+.caixa-nav:hover {
+  background-color: #7c64b2;
+  transform: translateY(-2px);
+  border-color: #a78bfa;
+}
+
+.caixa-nav:visited {
+  color: #ffffff; /* manter branco mesmo após clique */
+}
+
+.caixa-nav:active,
+.caixa-nav:focus {
+  background-color: #9b78e3; /* roxo claro ao clicar */
+  outline: none;
+}
+
 
 .caixa-nav:hover {
   background-color: #7c64b2;
